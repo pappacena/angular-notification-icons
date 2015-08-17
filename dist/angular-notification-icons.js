@@ -3,7 +3,7 @@
 angular.module('angular-notification-icons', ['angular-notification-icons.tpls', 'ngAnimate']);
 angular.module('angular-notification-icons.tpls', []);
 
-angular.module("angular-notification-icons.tpls").run(["$templateCache", function($templateCache) {$templateCache.put("template/notification-icon.html","<div class=\"angular-notifications-container\">\r\n    <div class=\"angular-notifications-icon overlay\" ng-show=\"notification.visible\"><div ng-hide=\"notification.hideCount\">{{notification.count}}</div></div>\r\n    <div class=\"notification-inner\">\r\n        <ng-transclude></ng-transclude>\r\n    </div>\r\n</div>");}]);
+angular.module("angular-notification-icons.tpls").run(["$templateCache", function($templateCache) {$templateCache.put("template/notification-icon.html","<div class=\"angular-notifications-container\">\n    <div class=\"angular-notifications-icon overlay\" ng-show=\"notification.visible\"><div ng-hide=\"notification.hideCount\">{{notification.count}}</div></div>\n    <div class=\"notification-inner\">\n        <ng-transclude></ng-transclude>\n    </div>\n</div>");}]);
 /* global angular */
 
 (function() {
